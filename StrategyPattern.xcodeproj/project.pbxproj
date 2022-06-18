@@ -13,6 +13,12 @@
 		E4544052285DE6B100F69C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4544050285DE6B100F69C46 /* Main.storyboard */; };
 		E4544054285DE6B200F69C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4544053285DE6B200F69C46 /* Assets.xcassets */; };
 		E4544057285DE6B200F69C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4544055285DE6B200F69C46 /* LaunchScreen.storyboard */; };
+		E4544064285DE78B00F69C46 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4544063285DE78B00F69C46 /* ResultsView.swift */; };
+		E4544068285DEC5F00F69C46 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4544067285DEC5F00F69C46 /* OptionsView.swift */; };
+		E454406B285DF11100F69C46 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E454406A285DF11100F69C46 /* UIButton+Extension.swift */; };
+		E454406E285DF35700F69C46 /* VehicleSelectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E454406D285DF35700F69C46 /* VehicleSelectionProtocol.swift */; };
+		E4544070285DF37300F69C46 /* EstimatesViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E454406F285DF37300F69C46 /* EstimatesViewPresentableProtocol.swift */; };
+		E4544073285DF3C400F69C46 /* EstimatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4544072285DF3C400F69C46 /* EstimatesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		E4544053285DE6B200F69C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4544056285DE6B200F69C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4544058285DE6B200F69C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4544063285DE78B00F69C46 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		E4544067285DEC5F00F69C46 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		E454406A285DF11100F69C46 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		E454406D285DF35700F69C46 /* VehicleSelectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSelectionProtocol.swift; sourceTree = "<group>"; };
+		E454406F285DF37300F69C46 /* EstimatesViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesViewPresentableProtocol.swift; sourceTree = "<group>"; };
+		E4544072285DF3C400F69C46 /* EstimatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,10 @@
 		E4544049285DE6B100F69C46 /* StrategyPattern */ = {
 			isa = PBXGroup;
 			children = (
+				E4544071285DF3B700F69C46 /* Models */,
+				E454406C285DF33D00F69C46 /* Protocols */,
+				E4544069285DF10200F69C46 /* Extension */,
+				E454405E285DE6C800F69C46 /* Views */,
 				E454404A285DE6B100F69C46 /* AppDelegate.swift */,
 				E454404C285DE6B100F69C46 /* SceneDelegate.swift */,
 				E454404E285DE6B100F69C46 /* ViewController.swift */,
@@ -65,6 +81,40 @@
 				E4544058285DE6B200F69C46 /* Info.plist */,
 			);
 			path = StrategyPattern;
+			sourceTree = "<group>";
+		};
+		E454405E285DE6C800F69C46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4544063285DE78B00F69C46 /* ResultsView.swift */,
+				E4544067285DEC5F00F69C46 /* OptionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4544069285DF10200F69C46 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E454406A285DF11100F69C46 /* UIButton+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E454406C285DF33D00F69C46 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E454406D285DF35700F69C46 /* VehicleSelectionProtocol.swift */,
+				E454406F285DF37300F69C46 /* EstimatesViewPresentableProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E4544071285DF3B700F69C46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4544072285DF3C400F69C46 /* EstimatesModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E454404F285DE6B100F69C46 /* ViewController.swift in Sources */,
+				E454406E285DF35700F69C46 /* VehicleSelectionProtocol.swift in Sources */,
+				E4544070285DF37300F69C46 /* EstimatesViewPresentableProtocol.swift in Sources */,
+				E4544064285DE78B00F69C46 /* ResultsView.swift in Sources */,
 				E454404B285DE6B100F69C46 /* AppDelegate.swift in Sources */,
+				E4544068285DEC5F00F69C46 /* OptionsView.swift in Sources */,
 				E454404D285DE6B100F69C46 /* SceneDelegate.swift in Sources */,
+				E454406B285DF11100F69C46 /* UIButton+Extension.swift in Sources */,
+				E4544073285DF3C400F69C46 /* EstimatesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
